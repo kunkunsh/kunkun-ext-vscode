@@ -20,5 +20,6 @@ jobs:
           bun-version: latest
       - name: Publish package
         run: |
-          bun install  
+          bun install
+          bun run build
           bunx jsr publish --allow-slow-types
