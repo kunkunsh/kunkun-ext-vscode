@@ -1,9 +1,9 @@
 {
   "name": "@kunkun/kunkun-ext-vscode",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "exports": "./mod.ts",
   "publish": {
-    "include": ["dist", "README.md", "mod.ts"]
+    "include": ["dist", "README.md", "mod.ts", "package.json"]
   }
 }
