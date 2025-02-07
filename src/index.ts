@@ -10,8 +10,8 @@ import {
 	shell,
 	toast,
 	ui,
-	WorkerExtension
-} from "@kksh/api/ui/worker"
+	TemplateUiCommand
+} from "@kksh/api/ui/template"
 import { array, boolean, flatten, object, safeParse, string, type InferOutput } from "valibot"
 
 const Project = object({
@@ -59,7 +59,7 @@ function openWithVSCode(path: string) {
 		})
 }
 
-class VSCodeProjectManager extends WorkerExtension {
+class VSCodeProjectManager extends TemplateUiCommand {
 	async load() {
 		ui.render(new List.List({ items: [] }))
 		const platform = await os.platform()

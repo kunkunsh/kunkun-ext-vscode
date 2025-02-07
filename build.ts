@@ -1,11 +1,11 @@
 import { watch } from "fs"
 import { join } from "path"
-import { refreshTemplateWorkerExtension } from "@kksh/api/dev"
+import { refreshTemplateWorkerCommand } from "@kksh/api/dev"
 import { $ } from "bun"
 
 async function build() {
 	await $`bun build --minify --target=browser --outdir=./dist ./src/index.ts`
-	await refreshTemplateWorkerExtension()
+	await refreshTemplateWorkerCommand()
 }
 
 const srcDir = join(import.meta.dir, "src")
