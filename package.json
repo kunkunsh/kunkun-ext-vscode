@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.kunkun.sh/",
   "name": "kunkun-ext-vscode",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "repository": "https://github.com/kunkunsh/kunkun-ext-vscode",
   "type": "module",
@@ -100,8 +100,8 @@
     "build": "bun build.ts"
   },
   "dependencies": {
-    "@kksh/api": "^0.1.5",
-    "valibot": "^1.0.0-rc.2"
+    "@kksh/api": "^0.1.7",
+    "valibot": "^1.0.0"
   },
   "devDependencies": {
     "@types/bun": "latest"
